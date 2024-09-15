@@ -37,10 +37,10 @@ import {
 } from "../assets"; 
 import Music1 from '../assets/music1.png'; 
 import Music2 from '../assets/music2.png'; 
-import Music3 from '../assets/music3.png'; 
+import Music3 from '../assets/Music3.png'; 
 import Music4 from '../assets/yt.webp'; 
 import Music5 from '../assets/Music5.png';  
-import Music6 from '../assets/Music6.png'; 
+import Music6 from '../assets/music6.png'; 
 import Insta from '../assets/insta.webp'; 
 
 export const navigation = [
