@@ -41,7 +41,8 @@ import Music3 from '../assets/Music3.png';
 import Music4 from '../assets/yt.webp'; 
 import Music5 from '../assets/Music5.png';  
 import Music6 from '../assets/music6.png'; 
-import Insta from '../assets/insta.webp'; 
+import Insta from '../assets/insta.webp';  
+import Guitar from '../assets/guitar.png';
 
 export const navigation = [
   {
@@ -89,8 +90,8 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "Developing Artists",
+    text: "Developing Artists..! We provide personalized strategies and resources to help emerging artists grow, refine their skills, and build a sustainable music career with long-term success in the industry.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
@@ -98,27 +99,27 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "Grow Music",
+    text: "Elevate your sound and reach new heights with our tailored strategies and tools designed to amplify your music's impact and connect with a broader audience.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "Digital Marketing",
+    text: "Transform your brand with targeted strategies and data-driven insights that drive engagement, boost visibility, and achieve measurable results in the digital landscape",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    title: "Targeted Campaigns",
+    text: "Reach your ideal audience with precision through customized marketing strategies that drive engagement, increase conversions, and maximize your campaign's effectiveness.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap4,
+    imageUrl: Guitar,
   },
 ];
 
@@ -203,37 +204,71 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Youtube Campaign",
+    description: "Boost Your Brand with Targeted YouTube Campaigns",
+    price: "300",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "30 Days Youtube Campaign",
+      "Targeted Marketing/Engagement",
+      "Meta Ads and Youtube Ads",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Spotify Campaign",
+    description: "Maximize Streams with Strategic Spotify Campaigns",
+    price: "250",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "2 Tracks Spotify campaign",
+      "Spotify Curation & Playlisting",
+      "35k+ Reach on Spotify",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Artist Development Program",
+    description: "Tailored Programs for Artist Growth and Success in 6 months",
+    price: "4299",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Build Your Brand with Artist Development",
+      "Split Payments option too",
+      "6 Months Program",
     ],
-  },
+  }, 
+  {
+    id: "3",
+    title: "Website Creation",
+    description: "Build a Stunning Website for Your Brand",
+    price: "350",
+    features: [
+      "Custom Website Design",
+      "Responsive Web Development",
+      "SEO Optimization",
+    ],
+  },  
+  {
+    id: "4",
+    title: "Shopify Store & EPK",
+    description: "Seamless Shopify Setup for Your Business",
+    price: "400",
+    features: [
+      "Shopify Store Creation",
+      "Product Designing and listing",
+      "META Ads and Tiktok Ads",
+    ],
+  },  
+  {
+    id: "5",
+    title: "Instagram Campaign",
+    description: "Create Impactful Instagram Campaigns for Success",
+    price: "180",
+    features: [
+      "Organic Follower Campaign",
+      "Organic Engagment Campaign",
+      "Content creation / Reels and Posts",
+    ],
+  }, 
+
 ];
 
 export const benefits = [
@@ -292,30 +327,12 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/brandblitz.marketing?igsh=dThxYnlod3hzN2E0",
   },
   {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
+    id: "0",
     title: "Facebook",
     iconUrl: facebook,
     url: "#",
