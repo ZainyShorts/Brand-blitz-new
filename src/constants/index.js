@@ -34,41 +34,36 @@ import {
   telegram,
   twitter,
   yourlogo,
-} from "../assets";
+} from "../assets"; 
+import Music1 from '../assets/music1.png'; 
+import Music2 from '../assets/music2.png'; 
+import Music3 from '../assets/music3.png'; 
+import Music4 from '../assets/yt.webp'; 
+import Music5 from '../assets/Music5.png';  
+import Music6 from '../assets/Music6.png'; 
+import Insta from '../assets/insta.webp'; 
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Our Plans",
+    url: "#plans",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
     title: "Roadmap",
     url: "#roadmap",
   },
   {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
+    id: "2",
+    title: "About us",
+    url: "#about",
+  }, 
   {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+    id: "3",
+    title: "Contact us",
+    url: "#contact",
+  }
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -78,17 +73,17 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Artist Development",
+  "Music Promotion",
+  "Digital Marketing",
 ];
 
 export const brainwaveServicesIcons = [
-  recording03,
+  Insta,
   recording01,
-  disc02,
-  chromecast,
-  sliders04,
+  Music4,
+  Music6,
+  Music3,
 ];
 
 export const roadmap = [
@@ -128,50 +123,50 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Expand your music's reach with BrandBlitz, delivering targeted marketing for artists seeking wider audiences";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Expand Your Reach",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Boost Your Audience",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Grow Your Brand",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
+    title: "music6",
+    icon: Music6,
+    width: 30,
+    height: 40,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "Music",
+    icon: Music1,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "insta",
+    icon: Insta,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "music2",
+    icon: Music2,
     width: 34,
     height: 35,
   },
@@ -184,24 +179,24 @@ export const collabApps = [
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "Spotify",
+    icon: Music3,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
+    title: "Youtube",
+    icon: Music4,
     width: 26,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
+    title: "soundcloud",
+    icon: Music5,
+    width: 42,
+    height: 55,
   },
 ];
 
@@ -244,16 +239,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Amplify Your Audience",
+    text: "Our platform helps artists reach the right fans with targeted marketing strategies designed for maximum impact.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Boost Your Music Brand",
+    text: "We create personalized branding strategies to enhance your presence and build a loyal fan base.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +256,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Optimize Your Exposure",
+    text: "Leverage data-driven insights to increase your music's visibility and connect with more listeners worldwide",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Strategic Artist Growth",
+    text: "Our marketing tools help artists craft a roadmap to success, guiding their career to new heights.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +273,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Transform Your Reach",
+    text:  "Using advanced marketing techniques, we expand your music’s reach, helping you grow in a competitive industry.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Unlock New Opportunities",
+    text: "We provide artists with the tools to navigate the music industry, building momentum for long-term success.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

@@ -1,41 +1,43 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { service2, check } from "../assets"; 
+import { brainwaveServices, brainwaveServicesIcons } from "../constants"; 
+import Rapper1 from '../assets/rapper1.jpg' 
+import Rapper2 from '../assets/rapper2.webp'
 import {
   PhotoChatMessage,
   Gradient,
   VideoBar,
   VideoChatMessage,
 } from "./design/Services";
-
 import Generating from "./Generating";
-
+import Service from '../assets/services.webp';
 const Services = () => {
   return (
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Reach More Fans, Build Your Legacy"
+          text="Expand your fanbase with strategic marketing that helps you grow as an artist and build a lasting legacy."
         />
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={service1}
-              />
+            <img
+  className="w-full h-full object-cover md:object-right filter brightness-[40%]"
+  width={800}
+  alt="Smartest AI"
+  height={730}
+  src={Service}
+/>
+
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">Strategic Approach</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+              Elevate Your Sound with Expert Music Promotion
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -57,7 +59,7 @@ const Services = () => {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src={Rapper2}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -66,10 +68,10 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Digital Marketing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Enhance your social media platforms using our services&apos;s
+                  and campaigns. Try now!
                 </p>
               </div>
 
@@ -78,10 +80,9 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Music Marketing</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                  Helping Artists to take their Music to the Moon.
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -110,7 +111,7 @@ const Services = () => {
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src={Rapper1}
                   className="w-full h-full object-cover"
                   width={520}
                   height={400}
