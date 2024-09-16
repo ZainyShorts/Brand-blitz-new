@@ -3,17 +3,23 @@ import { useState } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
+import rgb from '../assets/benefits/card-2.svg'
 const PricingList = () => {  
   const [visibleItems, setVisibleItems] = useState(3); 
   const loadMoreItems = () => {
     setVisibleItems(prevVisibleItems => prevVisibleItems + 3);
   };
   return (
-    <div className="flex gap-[1rem] flex-wrap">
+    <div className="flex flex-col justify-center items-center   gap-[1rem] ">
+      <div className="flex justify-center items-center ">
+
       {pricing.slice(0, visibleItems).map((item) => (
         <div
           key={item.id}
-          className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-[29vw] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
+          className=" block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem] w-[19rem] mx-2 max-lg:w-full h-full px-6 bg-n-8rounded-[2rem] lg:w-[29vw] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
+          style={{
+            backgroundImage: `url(${rgb})`,
+          }}
         >
           <h4 className="h4 mb-4">{item.title}</h4>
           <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">
@@ -51,6 +57,8 @@ const PricingList = () => {
           </ul>
         </div>
       ))}
+      </div>
+
       <div className="flex justify-center w-[100vw]">
       {/* Load more button */}
       {visibleItems < pricing.length && (

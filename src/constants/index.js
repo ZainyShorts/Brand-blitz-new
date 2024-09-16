@@ -43,7 +43,7 @@ import Music5 from '../assets/Music5.png';
 import Music6 from '../assets/music6.png'; 
 import Insta from '../assets/insta.webp';  
 import Guitar from '../assets/guitar.png';
-
+import guitar from '../assets/roadmap/guitar.svg'
 export const navigation = [
   {
     id: "0",
@@ -71,7 +71,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [Music6, Music1, Insta, Music3, Music4];
 
 export const brainwaveServices = [
   "Artist Development",
@@ -119,7 +119,7 @@ export const roadmap = [
     text: "Reach your ideal audience with precision through customized marketing strategies that drive engagement, increase conversions, and maximize your campaign's effectiveness.",
     date: "May 2023",
     status: "progress",
-    imageUrl: Guitar,
+    imageUrl: guitar,
   },
 ];
 
@@ -204,7 +204,7 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Youtube Campaign",
+    title: "Youtube Campaign ",
     description: "Boost Your Brand with Targeted YouTube Campaigns",
     price: "300",
     features: [
@@ -215,7 +215,7 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Spotify Campaign",
+    title: "Spotify Campaign ",
     description: "Maximize Streams with Strategic Spotify Campaigns",
     price: "250",
     features: [
@@ -226,7 +226,7 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Artist Development Program",
+    title: "Artist Development ",
     description: "Tailored Programs for Artist Growth and Success in 6 months",
     price: "4299",
     features: [
