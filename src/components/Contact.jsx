@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { heroBackground } from "../assets";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
-import Loader from "./Loader";
+import Loader from "./Loader"; 
+import Footer from "./Footer";
 
 const Contact = () => {
   // State to store form input values and loading status
@@ -131,7 +132,8 @@ const Contact = () => {
         </div>
 
         <BottomLine />
-      </section>
+      </section> 
+      <Footer/>
     </>
   );
 };

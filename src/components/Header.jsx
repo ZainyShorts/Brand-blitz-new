@@ -32,6 +32,14 @@ const Header = () => {
   const goToContactPage = () => {
     handleClick();
     navigate("/contact");
+  }; 
+  const goToResultPage = () => {
+    handleClick();
+    navigate("/results");
+  }; 
+  const goToAboutPage = () => {
+    handleClick();
+    navigate("/about");
   };
 
   return (
@@ -66,8 +74,19 @@ const Header = () => {
               >
                 {item.title}
               </a>
-            ))}
-
+            ))} 
+             <button
+              onClick={goToAboutPage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              About us
+            </button>
+ <button
+              onClick={goToResultPage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              Our Results
+            </button>
             {/* Add Contact Us link */}
             <button
               onClick={goToContactPage}

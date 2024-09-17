@@ -47,19 +47,9 @@ import guitar from '../assets/roadmap/guitar.svg'
 export const navigation = [
   {
     id: "0",
-    title: "Our Plans",
-    url: "#plans",
+    title: "Home",
+    url: "/",
   },
-  {
-    id: "1",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
-  {
-    id: "2",
-    title: "About us",
-    url: "#about",
-  }, 
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
