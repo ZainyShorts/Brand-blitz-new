@@ -60,11 +60,6 @@ export const navigation = [
     title: "About us",
     url: "#about",
   }, 
-  {
-    id: "3",
-    title: "Contact us",
-    url: "#contact",
-  }
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
