@@ -11,12 +11,12 @@ const PricingList = () => {
   };
   return (
     <div className="flex flex-col justify-center items-center   gap-[1rem] ">
-      <div className="flex justify-center items-center ">
+      <div className="flex flex-wrap  justify-center items-center">
 
       {pricing.slice(0, visibleItems).map((item) => (
         <div
           key={item.id}
-          className=" block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem] w-[19rem] mx-2 max-lg:w-full h-full px-6 bg-n-8rounded-[2rem] lg:w-[29vw] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
+          className=" block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem] w-[19rem] mx-2 h-full px-6 bg-n-8rounded-[2rem] lg:w-[28vw] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
           style={{
             backgroundImage: `url(${rgb})`,
           }}
