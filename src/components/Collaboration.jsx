@@ -1,11 +1,16 @@
 import { brainwaveSymbol, check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
-import Button from "./Button";
+import Button from "./Button"; 
+import { useNavigate } from "react-router-dom";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";  
 import Brandblitz from '../assets/Logo.png';
 
-const Collaboration = () => {
+const Collaboration = () => {  
+  const navigate = useNavigate();
+  const HandleResult = () => { 
+  navigate('/results')
+  }
   return (
     <Section crosses>
       <div className="container lg:flex">
@@ -28,7 +33,7 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <Button onClick={HandleResult}>Check Our Results</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
