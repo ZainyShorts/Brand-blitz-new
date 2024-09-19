@@ -2,7 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import result from '../assets/result.jpeg'; 
 import result3 from '../assets/result3.jpeg'; 
-import result5 from '../assets/result5.jpeg';
+import result5 from '../assets/result5.jpeg'; 
+import image4 from "../assets/result4.jpeg"; 
+import image5 from "../assets/result7.jpeg"; 
+import image6 from "../assets/result13.jpeg";
+
 import { heroBackground } from "../assets";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import StarRating from "./Stars";
@@ -10,7 +14,10 @@ import StarRating from "./Stars";
 // Example profile pictures
 import profilePic1 from '../assets/profile1.webp';
 import profilePic2 from '../assets/profile2.jfif';
-import profilePic3 from '../assets/profile3.webp'; 
+import profilePic3 from '../assets/profile3.webp';  
+import image1 from "../assets/result11.jpeg"; 
+import image2 from "../assets/result10.jpeg"; 
+import image3 from "../assets/result9.jpeg"; 
 import profilePic4 from '../assets/profile4.jfif';
 import profilePic5 from '../assets/profile5.jfif'; 
 import Footer from "./Footer";
@@ -52,7 +59,7 @@ const ResultPage = () => {
           if (scrollLeft + clientWidth >= scrollWidth) {
             container.scrollLeft = 0;
           } else {
-            container.scrollLeft += 1;
+            container.scrollLeft += 20;
           }
         }
       }, 10);
@@ -108,7 +115,7 @@ const ResultPage = () => {
 
         <div className="relative pt-[8rem] -mt-[5.25rem] bg-transparent">
           <div className="relative w-full p-6 bg-transparent rounded-lg shadow-lg z-10 backdrop-blur-md transform -translate-y-16">
-            <h1 className="text-4xl mt-10 font-bold mb-10 text-center">Our Results</h1>
+            <h1 className="text-4xl mt-10 font-bold mb-10 text-center">Our  <span className="text-yellow-500">Results</span></h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               {images.map((image, index) => (
                 <div
@@ -132,14 +139,30 @@ const ResultPage = () => {
             </div>
           </div>
         </div>
-
+        <div className="relative mt-16 px-6 py-12 bg-transparent rounded-lg shadow-lg z-10">
+          <h2 className="text-3xl font-bold mb-8 text-center">That's How We Work <span className="text-yellow-500">Strategically</span></h2>
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+            <div className="w-full md:w-1/3">
+              <img src={image1} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 1" />
+              <p className="text-center text-gray-300 mt-4">Strategic Planning</p>
+            </div>
+            <div className="w-full md:w-1/3">
+              <img src={image2} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 2" />
+              <p className="text-center text-gray-300 mt-4">Execution & Monitoring</p>
+            </div>
+            <div className="w-full md:w-1/3">
+              <img src={image3} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 3" />
+              <p className="text-center text-gray-300 mt-4">Results & Optimization</p>
+            </div>
+          </div>
+        </div> 
         <BottomLine />
       </div>
 
       {/* Testimonials Section */}
       <section className="py-16 bg-transparent">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-white">What Our Clients Say</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">What Our <span className="text-yellow-500">Clients </span>Say</h2>
           <div className="relative">
             <div ref={scrollContainerRef} className="flex overflow-x-auto whitespace-nowrap hide-scrollbar">
               {duplicatedTestimonials.map((testimonial, index) => (
@@ -195,7 +218,7 @@ const ResultPage = () => {
 
         @media (max-width: 1024px) {
           .testimonial-item {
-            width: 85vw; /* Width for smaller screens */
+            width: 88vw; /* Width for smaller screens */
           }
         }
       `}</style>

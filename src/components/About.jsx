@@ -4,7 +4,10 @@ import { BackgroundCircles, BottomLine } from "./design/Hero";
 import Footer from "./Footer"; 
 import image1 from "../assets/result11.jpeg"; 
 import image2 from "../assets/result10.jpeg"; 
-import image3 from "../assets/result9.jpeg";
+import image3 from "../assets/result9.jpeg"; 
+import image4 from "../assets/result4.jpeg"; 
+import image5 from "../assets/result7.jpeg"; 
+import image6 from "../assets/result13.jpeg";
 
 const AboutUsPage = () => {
   return (
@@ -23,7 +26,7 @@ const AboutUsPage = () => {
 
         <div className="relative pt-[8rem] -mt-[5.25rem]">
           <div className="relative w-full p-6 rounded-lg shadow-lg z-10 backdrop-blur-md transform -translate-y-16">
-            <h1 className="text-4xl mt-10 font-bold mb-10 text-center">About <span className="text-yellow-500">Us</span> </h1>
+            <h1 className="text-4xl mt-10 font-bold mb-10 text-center">Our <span className="text-yellow-500">Company</span> </h1>
             <div className="bg-transparent border p-8 rounded-lg shadow-lg text-center">
               <p className="text-lg text-gray-300 mb-6">
                 What if you have a well-equipped and experienced team behind you managing everything for you and focusing on enhancing your revenue and your fan base?
@@ -57,20 +60,21 @@ const AboutUsPage = () => {
         </div>
 
         {/* Strategic Work Section */}
+       
         <div className="relative mt-16 px-6 py-12 bg-transparent rounded-lg shadow-lg z-10">
-          <h2 className="text-3xl font-bold mb-8 text-center">That's How We Work <span className="text-yellow-500">Strategically</span></h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Some of our  <span className="text-yellow-500">Top Plans</span></h2>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <div className="w-full md:w-1/3">
-              <img src={image1} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 1" />
-              <p className="text-center text-gray-300 mt-4">Strategic Planning</p>
+              <img src={image4} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 1" />
+              <p className="text-center text-gray-300 mt-4">SPOTIFY CAMPAIGN</p>
             </div>
             <div className="w-full md:w-1/3">
-              <img src={image2} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 2" />
-              <p className="text-center text-gray-300 mt-4">Execution & Monitoring</p>
+              <img src={image5} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 2" />
+              <p className="text-center text-gray-300 mt-4">YOUTUBE CAMPAIGN</p>
             </div>
             <div className="w-full md:w-1/3">
-              <img src={image3} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 3" />
-              <p className="text-center text-gray-300 mt-4">Results & Optimization</p>
+              <img src={image6} className="w-full h-auto rounded-lg shadow-md" alt="Strategic Work 3" />
+              <p className="text-center text-gray-300 mt-4">WEB DEVELOPMENT</p>
             </div>
           </div>
         </div>

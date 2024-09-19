@@ -2,7 +2,8 @@ import { brainwaveSymbol, check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { LeftCurve, RightCurve } from "./design/Collaboration";  
+import Brandblitz from '../assets/Logo.png';
 
 const Collaboration = () => {
   return (
@@ -40,10 +41,10 @@ const Collaboration = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={brainwaveSymbol}
-                    width={48}
-                    height={48}
-                    alt="brainwave"
+                    src={Brandblitz}
+                    width={54}
+                    height={54}
+                    alt="brandblitz"
                   />
                 </div>
               </div>
