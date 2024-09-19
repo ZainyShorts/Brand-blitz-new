@@ -2,13 +2,18 @@
 import { useState } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
-import Button from "./Button";
+import Button from "./Button"; 
+import { useNavigate } from "react-router-dom";
 import rgb from '../assets/benefits/card-2.svg'
 const PricingList = () => {  
   const [visibleItems, setVisibleItems] = useState(3); 
   const loadMoreItems = () => {
     setVisibleItems(prevVisibleItems => prevVisibleItems + 3);
-  };
+  }; 
+  const navigate = useNavigate();
+  const HandleNavigate = () => { 
+navigate('/contact')
+  }
   return (
     <div className="flex flex-col justify-center items-center   gap-[1rem] ">
       <div className="flex flex-wrap  justify-center items-center">
@@ -38,7 +43,7 @@ const PricingList = () => {
 
           <Button
             className="w-full mb-6"
-            href={item.price ? "/contact" : "mailto:contact@jsmastery.pro"}
+           onClick={HandleNavigate}
             white={!!item.price}
           >
             {item.price ? "Get started" : "Contact us"}
