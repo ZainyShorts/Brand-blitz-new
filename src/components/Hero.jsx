@@ -105,9 +105,9 @@ const Hero = () => {
             Unlock your music's full potential with tailored strategies designed 
             for unstoppable growth and lasting success.
           </p>
-          <Button href="/contact" white>
-            Get started
-          </Button>
+          {/* <Button white>
+            Scroll Down
+          </Button> */}
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
