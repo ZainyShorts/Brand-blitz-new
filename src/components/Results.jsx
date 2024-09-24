@@ -30,10 +30,10 @@ const images = [
 
 const testimonials = [
   { text: "Excellent service and amazing results!", author: "Little Joshua Music", profilePic: profilePic1 },
-  { text: "A fantastic experience from start to finish.", author: "Queen Pheena", profilePic: profilePic2 },
-  { text: "Highly recommend for top-notch campaigns!", author: "Chadsflame", profilePic: profilePic3 }, 
-  { text: "The results speak for themselves. Excellent!", author: "Rxchworld", profilePic: profilePic4 }, 
-  { text: "A game-changer for our marketing strategy!!", author: "Treat4real", profilePic: profilePic5 },
+  { text: "A fantastic exp from start to finish.", author: "Queen Pheena", profilePic: profilePic2 },
+  { text: "Recommend for top-notch campaigns!", author: "Chadsflame", profilePic: profilePic3 }, 
+  { text: "The results speak for themselves.", author: "Rxchworld", profilePic: profilePic4 }, 
+  { text: "A game-changer for marketing strategy!", author: "Treat4real", profilePic: profilePic5 },
 ];
 
 const duplicatedTestimonials = [...testimonials, ...testimonials];
