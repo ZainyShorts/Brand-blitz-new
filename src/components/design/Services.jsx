@@ -1,7 +1,10 @@
-import { brainwaveWhiteSymbol, gradient, play } from "../../assets";
-import ChatBubbleWing from "../../assets/svg/ChatBubbleWing";
-
-export const Gradient = () => {
+import React, { useState, useRef } from 'react';
+import { brainwaveWhiteSymbol, gradient, play } from "../../assets"; 
+import { useEffect } from 'react';
+import ChatBubbleWing from "../../assets/svg/ChatBubbleWing";    
+import { FaPause } from 'react-icons/fa'; // React icon for pause
+export const Gradient = () => { 
+ 
   return (
     <div className="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
       <img
@@ -24,7 +27,8 @@ export const PhotoChatMessage = () => {
   );
 };
 
-export const VideoChatMessage = () => {
+export const VideoChatMessage = () => { 
+  
   return (
     <div className="absolute top-8 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
       Start Your Camapign today!
@@ -47,19 +51,85 @@ export const VideoChatMessage = () => {
   );
 };
 
-export const VideoBar = () => {
+export const VideoBar = () => { 
+  const [isPlaying, setIsPlaying] = useState(false); 
+  const audioRef = useRef(null);  
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0); 
+  const handleTimeUpdate = () => {
+    setCurrentTime(audioRef.current.currentTime);
+    setDuration(audioRef.current.duration);
+  };
+
+  const handleSeek = (e) => {
+    const seekTime = (e.target.value / 100) * duration; // Calculate seek time
+    audioRef.current.currentTime = seekTime; // Set the audio's current time
+    setCurrentTime(seekTime); // Update current time state
+  };
+
+  // Update duration when audio metadata is loaded
+  const handleLoadedMetadata = () => {
+    setDuration(audioRef.current.duration);
+  };
+
+  // Add event listeners
+  useEffect(() => {
+    const audio = audioRef.current;
+    audio.addEventListener('timeupdate', handleTimeUpdate);
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata);
+
+    // Cleanup event listeners
+    return () => {
+      audio.removeEventListener('timeupdate', handleTimeUpdate);
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
+    };
+  }, []);
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  }; 
+  const handleClickProgressBar = (e) => {
+    const progressBar = e.target.getBoundingClientRect();
+    const clickPosition = e.clientX - progressBar.left; // Get the click position
+    const clickPercentage = clickPosition / progressBar.width; // Calculate click percentage
+    const newTime = clickPercentage * duration; // Calculate the new time
+    audioRef.current.currentTime = newTime; // Set the audio's current time
+    setCurrentTime(newTime); // Update current time state
+  };
   return (
     <div className="absolute left-0 bottom-0 w-full flex items-center p-6">
-      <img
-        src={play}
-        width={24}
-        height={24}
-        alt="Play"
-        className="object-contain mr-3"
-      />
-
-      <div className="flex-1 bg-[#D9D9D9]">
-        <div className="w-1/2 h-0.5 bg-color-1"></div>
+      <audio ref={audioRef} src="/song.mpeg" preload="auto" />
+      <div onClick={handlePlayPause} className="cursor-pointer">
+        {isPlaying ? (
+          <FaPause size={22} color="#ffffff"/> 
+        ) : (
+          <img
+            src={play} // Your play icon
+            width={22}
+            height={22}
+            alt="Play"
+          />
+        )}
+      </div>
+      <div className="flex-1 bg-[#D9D9D9] relative h-1 mx-4" onClick={handleClickProgressBar}>
+        <div
+          className="absolute bg-color-1 h-full"
+          style={{
+            width: `${(currentTime / duration) * 100}%`, // Calculate the width based on current time
+          }}
+        />
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={duration ? (currentTime / duration) * 100 : 0}
+          onChange={handleSeek}
+          className="w-full h-1 appearance-none bg-transparent cursor-pointer"
+        />
       </div>
     </div>
   );
