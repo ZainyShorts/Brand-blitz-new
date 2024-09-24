@@ -94,15 +94,16 @@ export const VideoBar = () => {
   }; 
   const handleClickProgressBar = (e) => {
     const progressBar = e.target.getBoundingClientRect();
-    const clickPosition = e.clientX - progressBar.left; // Get the click position
-    const clickPercentage = clickPosition / progressBar.width; // Calculate click percentage
-    const newTime = clickPercentage * duration; // Calculate the new time
-    audioRef.current.currentTime = newTime; // Set the audio's current time
-    setCurrentTime(newTime); // Update current time state
-  };
+    const clickPosition = e.clientX - progressBar.left; 
+    const clickPercentage = clickPosition / progressBar.width; 
+    const newTime = clickPercentage * duration; 
+    audioRef.current.currentTime = newTime; 
+    setCurrentTime(newTime); 
+  };  
+  const AudioURL = "https://res.cloudinary.com/diml90c1y/video/upload/v1727189231/song_zxzqed.mp3"
   return (
     <div className="absolute left-0 bottom-0 w-full flex items-center p-6">
-      <audio ref={audioRef} src="/song.mpeg" preload="auto" />
+      <audio ref={audioRef} src={AudioURL} preload="auto" />
       <div onClick={handlePlayPause} className="cursor-pointer">
         {isPlaying ? (
           <FaPause size={22} color="#ffffff"/> 
