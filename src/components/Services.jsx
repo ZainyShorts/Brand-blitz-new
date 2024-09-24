@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service2, check } from "../assets"; 
+import { check } from "../assets"; 
 import { brainwaveServices, brainwaveServicesIcons } from "../constants"; 
 import Rapper1 from '../assets/rapper1.jpg' 
 import Rapper2 from '../assets/rapper2.webp'
