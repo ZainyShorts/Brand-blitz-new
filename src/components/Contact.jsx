@@ -45,7 +45,7 @@ const Contact = () => {
       // Handle successful submission
       console.log("Message sent successfully");
       // Clear form fields if needed
-      setFormData({ name: "", email: "", msg: "" });
+      setFormData({});
 
     } catch (error) {
       // Handle errors
