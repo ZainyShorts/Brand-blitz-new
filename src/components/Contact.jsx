@@ -43,7 +43,7 @@ const Contact = () => {
       }
 
       // Handle successful submission
-      console.log("Message sent successfully");
+      console.log("Message sent successfully.");
       // Clear form fields if needed
       setFormData({});
 
