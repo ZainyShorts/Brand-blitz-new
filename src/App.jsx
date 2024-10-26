@@ -12,10 +12,12 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";  
 import AboutUsPage from "./components/About";
 import Results from "./components/Results";
+import MetaPixel from "./components/Meta";
 
 const App = () => {
   return (
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <MetaPixel pixelId={'513539781562239'}/>
       <Header />
       <Routes>
         <Route
