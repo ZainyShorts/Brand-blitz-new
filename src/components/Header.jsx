@@ -42,6 +42,10 @@ const Header = () => {
     handleClick();
     navigate("/about");
   };
+  const goToArtistPage = () => {
+    handleClick();
+    navigate("/artist-development");
+  };
 
   return (
     <div
@@ -95,6 +99,13 @@ const Header = () => {
               className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
             >
               Contact Us
+            </button>
+
+            <button
+              onClick={goToArtistPage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              Artist Dev
             </button>
           </div>
 

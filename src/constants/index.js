@@ -180,16 +180,16 @@ export const collabApps = [
 
 export const pricing = [
   {
-    id: "0",
-    title: "Youtube Campaign ",
-    description: "Boost Your Brand with Targeted YouTube Campaigns",
-    price: "300",
+    id: "2",
+    title: "Instagram Fanbase ",
+    description: "Tailored Programs for Artist Growth and Success in 6 months",
+    price: "120",
     features: [
-      "30 Days Youtube Campaign",
-      "Targeted Marketing/Engagement",
-      "Meta Ads and Youtube Ads",
+      "Hashtag Research",
+      "Contnt Creation",
+      "Advance CTA Strategy",
     ],
-  },
+  }, 
   {
     id: "1",
     title: "Spotify Campaign ",
@@ -203,15 +203,16 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Artist Development ",
-    description: "Tailored Programs for Artist Growth and Success in 6 months",
-    price: "4299",
+    title: "Youtube Campaign ",
+    description: "Boost Your Brand with Targeted YouTube Campaigns",
+    price: "300",
     features: [
-      "Build Your Brand with Artist Development",
-      "Split Payments option too",
-      "6 Months Program",
+      "30 Days Youtube Campaign",
+      "Targeted Marketing/Engagement",
+      "Meta Ads and Youtube Ads",
     ],
-  }, 
+  },
+  
   {
     id: "3",
     title: "Website Creation",
@@ -285,8 +286,8 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Transform Your Reach",
-    text:  "Using advanced marketing techniques, we expand your music’s reach, helping you grow in a competitive industry.",
+    title: "Amplify Your Sound",
+    text: "Leverage cutting-edge marketing strategies to maximize your audience, boost engagement, and make your music stand out in a crowded industry.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,

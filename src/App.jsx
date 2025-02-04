@@ -13,6 +13,7 @@ import Contact from "./components/Contact";
 import AboutUsPage from "./components/About";
 import Results from "./components/Results";
 import MetaPixel from "./components/Meta";
+import ArtistDevelopment from "./components/ArtistDevelopment";
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/results" element={<Results />} />  
         <Route path="/about" element={<AboutUsPage/>} /> 
-
+        <Route path="/artist-development" element={<ArtistDevelopment/>} /> 
       </Routes>
       <ButtonGradient />
     </div>
