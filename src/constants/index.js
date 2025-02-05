@@ -294,7 +294,7 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Unlock New Opportunities",
+    title: 'Unlock New Opportunities',
     text: "We provide artists with the tools to navigate the music industry, building momentum for long-term success.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
