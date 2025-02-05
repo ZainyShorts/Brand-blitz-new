@@ -11,7 +11,8 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import Contact from "./components/Contact";  
 import AboutUsPage from "./components/About";
-import Results from "./components/Results";
+import Results from "./components/Results"; 
+import OurWork from "./components/Our-Work";
 import MetaPixel from "./components/Meta";
 import ArtistDevelopment from "./components/ArtistDevelopment";
 
@@ -39,7 +40,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/results" element={<Results />} />  
         <Route path="/about" element={<AboutUsPage/>} /> 
-        <Route path="/artist-development" element={<ArtistDevelopment/>} /> 
+        <Route path="/artist-development" element={<ArtistDevelopment/>} />  
+        <Route path="/our-work" element={<OurWork/>} />          
       </Routes>
       <ButtonGradient />
     </div>
