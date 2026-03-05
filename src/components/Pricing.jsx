@@ -28,7 +28,7 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brandblitz"
+          tag="Get started with MightyMedia"
           title="Your Music , Our strategy"
         />
 

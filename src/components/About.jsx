@@ -42,7 +42,7 @@ const AboutUsPage = () => {
               <div className="mt-10">
                 <h2 className="text-2xl font-semibold mb-4">Our  <span className="text-yellow-600">Mission</span></h2>
                 <p className="text-lg text-gray-300 mb-6">
-                  At Brandblitz, our mission is to elevate artists by providing them with the tools and expertise they need to succeed. We are dedicated to nurturing creativity and transforming it into tangible growth. Our approach is holistic, ensuring that every aspect of an artist’s brand is thoughtfully managed.
+                  At MightyMedia, our mission is to elevate artists by providing them with the tools and expertise they need to succeed. We are dedicated to nurturing creativity and transforming it into tangible growth. Our approach is holistic, ensuring that every aspect of an artist’s brand is thoughtfully managed.
                 </p>
                 <h2 className="text-2xl font-semibold mb-4">Core <span className="text-yellow-600">Values</span></h2>
                 <ul className="list-disc list-inside mb-6">

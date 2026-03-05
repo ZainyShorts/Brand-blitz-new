@@ -87,7 +87,7 @@ const Hero = () => {
           >
             Drive Your Music to New Heights&nbsp;with {` `} 
             <span className="inline-block relative">
-              BrandBlitz{" "} 
+              MightyMedia{" "} 
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"

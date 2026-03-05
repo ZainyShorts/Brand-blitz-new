@@ -58,9 +58,9 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4"> 
-      <img className=" h-14 w-14 mt-2 ml-[-5px] md:h-16 md:w-16" src={Logo} alt="" />
+      <img className=" h-14 w-14 mt-2 ml-[-5px] md:h-16 md:w-16" src={'https://res.cloudinary.com/dlasb4krd/image/upload/v1772731188/v2olbsqnwzlxgslnvkkx.png'} alt="" />
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <h1 className="text-3xl md:ml-3 font-serif font-bold">BrandBlitz</h1>
+          <h1 className="text-3xl md:ml-3 font-serif font-bold">MightyMedia</h1>
         </a>
 
         <nav

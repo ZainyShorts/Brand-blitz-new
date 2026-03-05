@@ -46,10 +46,10 @@ const Collaboration = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={Brandblitz}
+                    src={'https://res.cloudinary.com/dlasb4krd/image/upload/v1772731188/v2olbsqnwzlxgslnvkkx.png'}
                     width={54}
                     height={54}
-                    alt="brandblitz"
+                    alt="MightyMedia"
                   />
                 </div>
               </div>

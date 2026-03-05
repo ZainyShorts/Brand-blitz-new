@@ -101,7 +101,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "Expand your music's reach with BrandBlitz, delivering targeted marketing for artists seeking wider audiences";
+  "Expand your music's reach with MightyMedia, delivering targeted marketing for artists seeking wider audiences";
 
 export const collabContent = [
   {
