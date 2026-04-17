@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
@@ -15,6 +14,7 @@ import Results from "./components/Results";
 import OurWork from "./components/Our-Work";
 import MetaPixel from "./components/Meta";
 import ArtistDevelopment from "./components/ArtistDevelopment";
+import PromoForm from "./components/PromoForm";
 
 const App = () => {
   return (
@@ -41,7 +41,8 @@ const App = () => {
         <Route path="/results" element={<Results />} />  
         <Route path="/about" element={<AboutUsPage/>} /> 
         <Route path="/artist-development" element={<ArtistDevelopment/>} />  
-        <Route path="/our-work" element={<OurWork/>} />          
+        <Route path="/our-work" element={<OurWork/>} />   
+        <Route path="/promo-form" element={<PromoForm/>} />        
       </Routes>
       <ButtonGradient />
     </div>

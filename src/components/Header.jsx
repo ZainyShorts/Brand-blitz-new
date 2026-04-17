@@ -50,6 +50,10 @@ const Header = () => {
     handleClick();
     navigate("/our-work");
   };
+  const goToPromoPage = () => {
+    handleClick();
+    navigate("/promo-form");
+  };
 
   return (
     <div
@@ -116,6 +120,12 @@ const Header = () => {
               className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
             >
               Our Work
+            </button>
+            <button
+              onClick={goToPromoPage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              Promo
             </button>
           </div>
 
